@@ -1,0 +1,74 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  margin: 0;
+    padding: 0; }
+
+
+.flex-container {
+    flex-wrap: wrap;
+   padding: 0px 10px;
+    justify-content: space-between;
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+ .fashionHub {
+         flex-basis: 150px;
+ }
+
+.flex-container > div {
+      flex-wrap: wrap;
+//   background-color: DodgerBlue;
+  color: rgb(15, 4, 4);
+  width: 300px;
+//   margin: 10px;
+  text-align: center;
+  line-height: 75px;
+//   font-size: 30px;
+}
+
+.left, .right {
+      flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.left {
+ margin-left: 100px;
+}
+
+.right {
+    margin-right: 100px;
+}
+
+.cart {
+   padding: 2px 8px;
+    border: 1px solid #f0cb88;
+    background-color: #f0cb88;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+// header icon 
+img.headIcon {
+    padding: -6px;
+    margin: -4px 6px;
+}
+
+@media only screen and (max-width: 1080px) {
+ .flex-container{
+         align-self: center;
+   flex-direction: column;
+    align-content: center;
+ }
+ .fashionHub {
+         flex-basis: 75px;
+ }
+ .left, .right {
+     margin: 0px;
+ }
+}
+
